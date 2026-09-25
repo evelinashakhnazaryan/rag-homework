@@ -23,7 +23,8 @@ def main():
               "Сравнение использует одну и ту же API-модель и одинаковые вопросы. Это наблюдение на данном наборе, не доказательство статистической значимости.",
               "", "## Примеры ошибок RAG"]
     rows = json.loads((root / "groq_rag.json").read_text(encoding="utf-8"))
-    for row in sorted(rows, key=lambda r: r["judge"]["score"])[:5]:
+    errors = [row for row in rows if row["judge"]["score"] < 4]
+    for row in sorted(errors, key=lambda r: r["judge"]["score"])[:5]:
         lines += ["", f"### Вопрос {row['id']}", row["question"], "", f"Ответ: {row['answer']}",
                   "", f"Эталон: {row['reference']}", "", f"Судья: {row['judge']['reason']}"]
     lines += ["", "## Ограничения и улучшения", "",

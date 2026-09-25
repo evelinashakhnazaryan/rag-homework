@@ -1,1 +1,1 @@
-
+"""Vanilla RAG homework."""
