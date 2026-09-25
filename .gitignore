@@ -1,0 +1,14 @@
+.venv/
+.env
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.cache/
+data/*.json
+!data/*.example.json
+results/*
+!results/.gitkeep
+!results/STATUS.md
+vllm.log
+results_reproduction/
+configs/reproduction.json
