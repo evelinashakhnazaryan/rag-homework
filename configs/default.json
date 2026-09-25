@@ -1,0 +1,18 @@
+{
+  "data_dir": "data",
+  "results_dir": "results",
+  "expected_articles": 10,
+  "expected_questions": 50,
+  "groq_model": "openai/gpt-oss-20b",
+  "judge_model": "openai/gpt-oss-120b",
+  "local_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "embedding_model": "intfloat/multilingual-e5-small",
+  "chunk_size": 700,
+  "chunk_overlap": 120,
+  "top_k": 4,
+  "max_tokens": 2048,
+  "local_max_tokens": 256,
+  "temperature": 0,
+  "seed": 42,
+  "request_interval": 2
+}
