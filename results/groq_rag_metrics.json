@@ -1,0 +1,11 @@
+{
+  "rouge1": 0.6586096774618554,
+  "rouge2": 0.5032774102758089,
+  "rougeL": 0.6219348442111707,
+  "bleu": 36.60260811841112,
+  "bleu_signature": "nrefs:1|case:mixed|eff:yes|tok:none|smooth:exp|version:2.6.0",
+  "n": 50,
+  "judge_mean": 3.68,
+  "mean_seconds": 0.3052428829200107,
+  "mode": "groq_rag"
+}
